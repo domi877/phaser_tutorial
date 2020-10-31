@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Phaer Tutorial 👋</h1>
+<h1 align="center">Welcome to Phaser Tutorial 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/domi877/phaser_tutorial#readme" target="_blank">
@@ -6,9 +6,6 @@
   </a>
   <a href="https://github.com/domi877/phaser_tutorial/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/domi877/phaser_tutorial/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/domi877/Phaer Tutorial" />
   </a>
 </p>
 
