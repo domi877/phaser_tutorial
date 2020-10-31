@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/domi877/phaser_tutorial#readme",
   "dependencies": {
-    "phaser": "^3.24.1"
+    "phaser": "^3.24.1",
+    "readme-md-generator": "^1.0.0"
   }
 }
