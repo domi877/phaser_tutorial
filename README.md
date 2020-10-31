@@ -19,6 +19,10 @@
 npm install
 ```
 
+## Play the Game
+
+To play this game, simply run the `index.html` file at your local webserver and view the result at `127.0.0.1`.
+
 ## Run tests
 
 ```sh
@@ -29,7 +33,7 @@ npm run test
 
 👤 **Dominik Iffland**
 
-- Github: [@domi877](https://github.com/domi877)
+-   Github: [@domi877](https://github.com/domi877)
 
 ## 🤝 Contributing
 
