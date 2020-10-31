@@ -31,6 +31,8 @@
             };
 
             var game = new Phaser.Game(config);
+            var score = 0;
+            var scoreText;
 
             function preload() {
                 this.load.image('sky', 'assets/sky.png');
@@ -63,6 +65,12 @@
                 player.setCollideWorldBounds(true);
                 player.body.setGravityY(50);
 
+                //Score
+                scoreText = this.add.text(16, 16, 'Score: 0', {
+                    fontsize: '35px',
+                    fill: '#000',
+                });
+
                 //Create some animations
                 this.anims.create({
                     key: 'left',
@@ -90,8 +98,34 @@
                     repeat: -1,
                 });
 
-                //Add Collider for platforms
+                //Add Stars
+                stars = this.physics.add.group({
+                    key: 'star',
+                    repeat: 11,
+                    setXY: { x: 12, y: 0, stepX: 70 },
+                });
+
+                stars.children.iterate(function (child) {
+                    child.setBounceY(Phaser.Math.FloatBetween(0.3, 0.5));
+                });
+
+                function collectStar(player, star) {
+                    star.disableBody(true, true);
+
+                    score += 10;
+                    scoreText.setText('Score: ' + score);
+                }
+
+                //Add Collider for platforms & stars
                 this.physics.add.collider(player, platforms);
+                this.physics.add.collider(stars, platforms);
+                this.physics.add.overlap(
+                    player,
+                    stars,
+                    collectStar,
+                    null,
+                    this
+                );
             }
 
             function update() {
