@@ -1,0 +1,22 @@
+{
+  "name": "phaser_tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial for Phaser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domi877/phaser_tutorial.git"
+  },
+  "author": "Dominik Iffland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domi877/phaser_tutorial/issues"
+  },
+  "homepage": "https://github.com/domi877/phaser_tutorial#readme",
+  "dependencies": {
+    "phaser": "^3.24.1"
+  }
+}
