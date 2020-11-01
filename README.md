@@ -14,7 +14,7 @@
 ### 🏠 [Homepage](https://github.com/domi877/phaser_tutorial#readme)
 
 ## Install
-
+Just checkout the repository and run the following command in the root folder. To run this command you need to have [node.js](https://nodejs.org/en/) >= 8.0.0 installed.
 ```sh
 npm install
 ```
